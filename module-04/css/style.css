@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html
+{
+    height: 100%;
+    margin: 30px;
+}
+
+.tops {
+    width: auto;
+    max-width: 1020px;
+}
+
+.title {
+    width: 100px;
+    float:left;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+.title::first-letter {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+  }
+
+.links {
+    float: right;
+    text-transform: uppercase;
+  }
+  
+  .links a {
+    font-size: 15px;
+    color: black;
+  }
+  
+  .links a:hover {
+    color: green;
+  }
+  
+.ref {
+    display: inline-block;
+    margin: 10px;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+.mainhead {
+    text-transform: uppercase;
+    padding: 75px 100px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    max-width: 700px;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 10px solid green;
+  }
+
+  .wrapper {
+    width: auto;
+    max-width: 1048px;
+    margin: auto;
+    min-height: 96vh;
+    padding: 10px;
+    font-size: 0;
+}
+
+.box {
+    margin: 10px;
+    max-width: 350px;
+    float:left;
+  }
+  
+  .box-left {
+    margin-left: 0;
+    width: 245px;
+    background: grey;
+  }
+
+  .item-text {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .box-left:hover {
+    background: green;
+  }
+
+  .text-left {
+    float: left;
+  }
+
+  .text-right {
+    float: right;
+    filter: opacity(50%);
+  }
+
+  .box-right {
+    float:right;
+    margin-left: 0;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .smallhead {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+
+    font-size: 20px;
+    margin: auto;
+    height: 50px;
+
+  }
+
+  .smallhead:before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 50px;
+    background:green;
+    transition: width 0.3s ease-in-out;
+    left: 0;
+    bottom: -5px;
+}
+
+.smallhead:hover:before {
+  width: 50%;
+}
+
+  .button {
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color:black;
+    border-radius: 6px;
+    cursor: pointer;
+    background: green;
+  }  
